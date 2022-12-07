@@ -19,6 +19,6 @@ namespace AppLaboratorio.Infraestructura.Api.Models.Persona
         [Required(ErrorMessage = "el primer apellido es requerido")]
         [MaxLength(10, ErrorMessage = "Primer apellido debe tener 10 caracteres o 3 por lo menos "), MinLength(3, ErrorMessage = "Primer apellido debe tener 10 caracteres o 3 por lo menos")]
         public string SegundoApellido { get; set; }
-        public int IdUsuario { get; set; }
+
     }
 }

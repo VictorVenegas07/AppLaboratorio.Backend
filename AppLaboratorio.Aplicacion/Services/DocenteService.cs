@@ -36,6 +36,7 @@ namespace AppLaboratorio.Aplicacion.Services
         {
             await ValidarEmpleado(entity);
             //await ValidarUsuario(entity);
+            CrearUsuarioEmpleado(entity);
             var response = await repository.GuardarAsync(entity);
             await repository.GuardarCambiosAsync();
             return response;
@@ -46,6 +47,15 @@ namespace AppLaboratorio.Aplicacion.Services
             var reponse = await repository.ExisteUsuarioAsync(entity.Usuario.NombreUsuario);
             if (reponse)
                 throw new ValidatorException($"El usuario {entity.Usuario.NombreUsuario} ya existe");
+        }
+        private void CrearUsuarioEmpleado(Docente entity)
+        {
+            entity.Usuario = new Usuario
+            {
+                IdCargo = 1,
+                Contraseña = entity.Identificacion,
+                NombreUsuario = $"{entity.PrimerNombre}{entity.PrimerApellido}",
+            };
         }
         private async Task ValidarEmpleado(Docente empleado)
         {
