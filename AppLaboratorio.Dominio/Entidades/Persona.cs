@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Text.Json.Serialization;
@@ -9,6 +10,7 @@ namespace AppLaboratorio.Dominio.Entidades
 {
     public class Persona
     {
+  
         public string Identificacion { get; set; }
         public string PrimerNombre { get; set; }
         public string SegundoNombre { get; set; }

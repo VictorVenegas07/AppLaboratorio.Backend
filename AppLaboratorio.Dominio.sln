@@ -3,13 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.3.32819.101
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppLaboratorio.Dominio", "AppLaboratorio.Dominio\AppLaboratorio.Dominio.csproj", "{DAE7D6E0-85D4-47FF-BCC9-FDD181F1E05F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AppLaboratorio.Dominio", "AppLaboratorio.Dominio\AppLaboratorio.Dominio.csproj", "{DAE7D6E0-85D4-47FF-BCC9-FDD181F1E05F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppLaboratorio.Infraestructura.Datos", "AppLaboratorio.Infraestructura.Datos\AppLaboratorio.Infraestructura.Datos.csproj", "{C4DDA94E-5444-4F8C-A199-E8C0CFBA5262}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AppLaboratorio.Infraestructura.Datos", "AppLaboratorio.Infraestructura.Datos\AppLaboratorio.Infraestructura.Datos.csproj", "{C4DDA94E-5444-4F8C-A199-E8C0CFBA5262}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppLaboratorio.Aplicacion", "AppLaboratorio.Aplicacion\AppLaboratorio.Aplicacion.csproj", "{08A09D82-8EDB-4F5A-A08D-074DB09E97FB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AppLaboratorio.Aplicacion", "AppLaboratorio.Aplicacion\AppLaboratorio.Aplicacion.csproj", "{08A09D82-8EDB-4F5A-A08D-074DB09E97FB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppLaboratorio.Infraestructura.Api", "AppLaboratorio.Infraestructura.Api\AppLaboratorio.Infraestructura.Api.csproj", "{3455C3FB-7A44-459C-8006-D7384020E995}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AppLaboratorio.Infraestructura.Api", "AppLaboratorio.Infraestructura.Api\AppLaboratorio.Infraestructura.Api.csproj", "{3455C3FB-7A44-459C-8006-D7384020E995}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestLaboratorio", "TestLaboratorio\TestLaboratorio.csproj", "{664A9C43-7795-4811-AF29-BC9257D8DD2F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{3455C3FB-7A44-459C-8006-D7384020E995}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3455C3FB-7A44-459C-8006-D7384020E995}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3455C3FB-7A44-459C-8006-D7384020E995}.Release|Any CPU.Build.0 = Release|Any CPU
+		{664A9C43-7795-4811-AF29-BC9257D8DD2F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{664A9C43-7795-4811-AF29-BC9257D8DD2F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{664A9C43-7795-4811-AF29-BC9257D8DD2F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{664A9C43-7795-4811-AF29-BC9257D8DD2F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

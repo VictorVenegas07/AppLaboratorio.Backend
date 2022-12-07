@@ -37,8 +37,15 @@ namespace AppLaboratorio.Aplicacion.Services
         public async Task<Producto> GuardarAsync(Producto entity)
         {
             var response = await repositoryProducto.GuardarAsync(entity);
+            await ValidarExistencia(entity.CodigoProducto);
             await repositoryProducto.GuardarCambiosAsync();
             return response;
+        }
+        private async Task ValidarExistencia(string codigoProducto)
+        {
+            var resp = await repositoryProducto.ExisteAsync(codigoProducto);
+            if (resp)
+                throw new ValidatorException("El producto ya existe");
         }
 
         public async Task<List<Producto>> ListarAsync()

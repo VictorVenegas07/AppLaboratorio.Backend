@@ -35,7 +35,7 @@ namespace AppLaboratorio.Aplicacion.Services
         public async Task<Docente> GuardarAsync(Docente entity)
         {
             await ValidarEmpleado(entity);
-            await ValidarUsuario(entity);
+            //await ValidarUsuario(entity);
             var response = await repository.GuardarAsync(entity);
             await repository.GuardarCambiosAsync();
             return response;
